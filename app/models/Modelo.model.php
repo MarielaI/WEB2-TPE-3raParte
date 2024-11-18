@@ -28,7 +28,7 @@ class ModeloModel {
           }
 
           if($sort) {
-            if(($sort == 'DESC')||$sort == 'desc'){
+            if(($sort == 'DESC')||($sort == 'desc')){
                 $sql .= 'desc';
             }
         }          

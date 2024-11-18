@@ -31,10 +31,6 @@ class ModeloApiController {
            $limit = $req->query->limit;
            $page = $req->query->page;
         }
-        else {
-            return $this->view->response("Ingrese un numero positivo", 400);
-        }
-                
         $modelos = $this->model->getModelos($sort, $orderBy, $limit, $page);
         
         // mando los modelos a la vista
